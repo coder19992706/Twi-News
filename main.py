@@ -9,5 +9,13 @@ def hello_world():
 def ki():
     return 'Nikhil Bansal'
 
+@app.route('/sudhanshu')
+def hi():
+    return 'This is sudhanshu'
+
+@app.route('/prakhar')
+def ji():
+    return 'Hello There'
+
 if __name__ == '__main__':
   app.run()
