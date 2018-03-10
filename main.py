@@ -7,7 +7,7 @@ def hello_world():
 
 @app.route('/nikhil')
 def ki():
-    return 'Nikhil Bansal'
+    return render_template('index.html')
 
 @app.route('/sudhanshu')
 def hi():
