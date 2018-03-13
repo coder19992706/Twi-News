@@ -21,10 +21,10 @@ def politics():
         out['reviews']=list()
         for rev in t_reviews:
             sent=sentiment(rev)
-            if sent["sentiment"] != 0:
+            if sent[0]["sentiment"] != 0:
                 sen=dict()
                 sen['tweet']=rev
-                sen['sentiment']=sent['sentiment']
+                sen['sentiment']=sent[0]['sentiment']
                 out['reviews'].append(sen)
         output.append(out)
     return render_template('news.html',output=output,topic='politics')
@@ -42,10 +42,10 @@ def sports():
         out['reviews']=list()
         for rev in t_reviews:
             sent=sentiment(rev)
-            if sent["sentiment"] != 0:
+            if sent[0]["sentiment"] != 0:
                 sen=dict()
                 sen['tweet']=rev
-                sen['sentiment']=sent['sentiment']
+                sen['sentiment']=sent[0]['sentiment']
                 out['reviews'].append(sen)
         output.append(out)
     return render_template('news.html',output=output,topic='sports')
@@ -63,10 +63,10 @@ def entertainment():
         out['reviews']=list()
         for rev in t_reviews:
             sent=sentiment(rev)
-            if sent["sentiment"] != 0:
+            if sent[0]["sentiment"] != 0:
                 sen=dict()
                 sen['tweet']=rev
-                sen['sentiment']=sent['sentiment']
+                sen['sentiment']=sent[0]['sentiment']
                 out['reviews'].append(sen)
         output.append(out)
     return render_template('news.html',output=output,topic='entertainment')
@@ -84,10 +84,10 @@ def technology():
         out['reviews']=list()
         for rev in t_reviews:
             sent=sentiment(rev)
-            if sent["sentiment"] != 0:
+            if sent[0]["sentiment"] != 0:
                 sen=dict()
                 sen['tweet']=rev
-                sen['sentiment']=sent['sentiment']
+                sen['sentiment']=sent[0]['sentiment']
                 out['reviews'].append(sen)
         output.append(out)
     return render_template('news.html',output=output,topic='Tech')
