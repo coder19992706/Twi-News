@@ -4,4 +4,4 @@ def tweet(news):
     data=list()
     for twe in queried_data:
         data.append(twe.text)
-    return data
+    return data#returns list of tweets all of which are strings

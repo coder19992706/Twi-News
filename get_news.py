@@ -16,4 +16,5 @@ def lookup(topic):
         app_data['description']=item['description']
         app_data['url']=item['url']
         data.append(app_data)
-    return data
+    return data#returns list of news each is a dictionary with keys
+    #'title','description','url' and values string
