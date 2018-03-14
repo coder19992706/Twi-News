@@ -1,7 +1,6 @@
 import json
 import urllib.parse
 import urllib.request
-import ssl
 
 def lookup(topic):
     """Looks up articles by topic."""
